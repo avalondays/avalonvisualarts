@@ -1,15 +1,143 @@
+/* DM Sans weights: ExtraLight 200, Regular 400, Regular 400 Italic, Bold 700, Black 900
+RED ORANGE: #E24444 
+MID ORANGE: #FF7469
+ORANGE: #FFA987
+BEIGE: #F4E0DC
+/* UNIVERSAL STYLES */
+
+html {
+    scroll-behavior: smooth
+}
+
 body {
-    background-color:rgb(34, 41, 82);
-}
-
-.disclaimer {
-    font-family: 'Figtree', sans-serif;
-    justify-content: center;
+    background-color: #0E0E1A;
     color: white;
-    align-items: center;
-    padding: 2rem;
+    font-family: 'DM Sans', sans-serif;
 }
 
-h1 {
-    font-size: 40pt;
+.main {
+    padding: 2rem 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 11pt;
+    transition: .2s all;
+}
+
+a:hover {
+    color: #FFA987;
+    transition: .3s all;
+}
+
+p,
+li,
+ul,
+ol {
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER NAV */
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    background: rgb(0, 9, 40);
+    background: linear-gradient(180deg, rgba(0, 9, 40, 1) 5%, rgba(7, 17, 70, 0) 100%);
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+
+    ul {
+        display: flex;
+        gap: 6rem;
+        padding-right: 2rem;
+        align-items: center;
+    }
+
+    a {
+        transition: all .3s ease-out;
+    }
+
+    a:hover {
+        transition: all .3s ease-out;
+        color: rgb(30, 127, 255);
+    }
+
+    .button a:hover {
+        transition: all .3s ease-out;
+        color: black;
+    }
+}
+
+.logo {
+    max-width: 12vw;
+}
+
+li {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+/* BG VIDEO */
+
+.hero-area {
+width: 100vw;
+z-index: 0;
+}
+
+/* BUMPER */
+
+.bumper {
+    background-image: url(../img/bumper.png);
+}
+
+/* SECTION 1 */
+
+.section-1 {
+align-items: center;
+padding: 3rem 0rem;
+
+h2 {
+    font-size: 44pt;
+    text-align: center;
+}
+
+.red-orange {
+    color: #E24444;
+}
+
+.mid-orange {
+    color: #FF7469;
+}
+
+.orange {
+    color: #FFA987;
+}
+
 }
