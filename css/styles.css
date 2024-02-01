@@ -1,0 +1,15 @@
+body {
+    background-color:rgb(34, 41, 82);
+}
+
+.disclaimer {
+    font-family: 'Figtree', sans-serif;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 40pt;
+}
