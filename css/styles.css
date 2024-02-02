@@ -115,6 +115,8 @@ z-index: 0;
 
 .bumper {
     background-image: url(../img/bumper.png);
+    background: no-repeat;
+    width: 100vw;
 }
 
 /* SECTION 1 */
@@ -140,4 +142,9 @@ h2 {
     color: #FFA987;
 }
 
+}
+
+.section-2 {
+    display: flex;
+    gap: 4rem;
 }
