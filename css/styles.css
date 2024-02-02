@@ -54,6 +54,7 @@ h3 {
 
 .open {
     display: block;
+    transition: .3s all;
 }
 
 
@@ -71,6 +72,7 @@ h3 {
     justify-content: space-between;
     padding: 2rem 2rem 2rem 2rem;
     width: 100%;
+    transition: .3s all;
 }
 
 li h1 {
@@ -93,6 +95,7 @@ nav {
     background-color: #1411399a;
     padding: 7rem 1rem;
     z-index: 1;
+    transition: .3s all;
 }
 
 
@@ -114,10 +117,18 @@ nav {
 /* --------- HAMBURGER NAV END -------- */
 
 
-/* BG VIDEO */
+/* BG VIDEO & BUMPER */
 
 .hero-area {
-z-index: 0;
+    z-index: 0;
+    position: relative;
+    text-align: center;
+
+}
+
+.header-video {
+    width: 100vw;
+    height: 40vh;
 }
 
 /* BUMPER */
@@ -125,34 +136,34 @@ z-index: 0;
 .bumper {
     background-image: url(../img/bumper.png);
     background: no-repeat;
-    width: 100vw;
     position: absolute;
     right: 0px;
-    top: 36.7vh;
+    bottom: -33px;
+    max-width: 100%;
 }
 
 /* SECTION 1 */
 
 .section-1 {
-align-items: center;
-padding: 3rem 0rem;
+    align-items: center;
+    padding: 3rem 0rem;
 
-h2 {
-    font-size: 20pt;
-    text-align: center;
-}
+    h2 {
+        font-size: 20pt;
+        text-align: center;
+    }
 
-.red-orange {
-    color: #E24444;
-}
+    .red-orange {
+        color: #E24444;
+    }
 
-.mid-orange {
-    color: #FF7469;
-}
+    .mid-orange {
+        color: #FF7469;
+    }
 
-.orange {
-    color: #FFA987;
-}
+    .orange {
+        color: #FFA987;
+    }
 }
 
 .section-2 {
@@ -163,7 +174,7 @@ h2 {
     p {
         padding-bottom: 1rem;
     }
-    
+
 }
 
 /* SECTION 3 */
@@ -176,7 +187,11 @@ h2 {
     padding: 3rem 0rem;
     margin: 2rem 0rem;
     position: relative;
-    text-align: center;
+    text-align: left;
+
+    h3 {
+        font-size: 26pt;
+    }
 
 }
 
@@ -193,7 +208,7 @@ h2 {
     position: absolute;
     right: 29px;
     bottom: 20px;
- }
+}
 
 .project-item-two {
     background-image: url(../img/placeholder.jpg);
@@ -238,6 +253,13 @@ h2 {
 }
 
 
+/* SECTION 4 */
+
+h1 a {
+    font-size: 30pt;
+}
+
+
 /* FOOTER */
 footer {
     display: grid;
@@ -266,7 +288,7 @@ footer {
 
 @media screen and (min-width: 800px) {
 
-    .mobile-nav {
+    .topnav {
         display: none;
     }
 
@@ -281,30 +303,41 @@ footer {
         padding: 2rem 2rem;
         background: rgb(0, 9, 40);
         background: linear-gradient(180deg, rgba(0, 9, 40, 1) 5%, rgba(7, 17, 70, 0) 100%);
-        /* position: fixed; */
+        position: fixed;
         width: 100vw;
         z-index: 1;
-    
+
         ul {
             display: flex;
             gap: 6rem;
             padding-right: 2rem;
             align-items: center;
         }
-    
+
         a {
             transition: all .3s ease-out;
         }
-    
+
         a:hover {
             transition: all .3s ease-out;
             color: rgb(30, 127, 255);
         }
-    
+
         .button a:hover {
             transition: all .3s ease-out;
             color: black;
         }
+    }
+    .header-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit:cover;
+    }
+    
+    .bumper {
+        position: absolute;
+        right: 0px;
+        bottom: -130px;
     }
 
     .section-2 {
