@@ -14,6 +14,7 @@ body {
     color: white;
     font-family: 'DM Sans', sans-serif;
     transition: .3s all;
+    width:fit-content;
 }
 
 .main {
@@ -139,7 +140,7 @@ nav {
     position: absolute;
     right: 0px;
     bottom: -33px;
-    max-width: 100%;
+    max-width: 100vw;
 }
 
 /* SECTION 1 */
