@@ -140,7 +140,10 @@ nav {
     position: absolute;
     right: 0px;
     bottom: -33px;
-    max-width: 100vw;
+    
+    img {
+        max-width: 100vw;
+    }
 }
 
 /* SECTION 1 */
@@ -182,6 +185,10 @@ nav {
 
 .section-3 {
     padding: 3rem 0rem;
+}
+
+.project-group {
+    display: block;
 }
 
 .project-item {
@@ -344,5 +351,15 @@ footer {
     .section-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .project-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .project-item {
+        height: 400px;
     }
 }
