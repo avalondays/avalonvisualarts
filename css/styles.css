@@ -13,6 +13,7 @@ body {
     background-color: #0E0E1A;
     color: white;
     font-family: 'DM Sans', sans-serif;
+    transition: .3s all;
 }
 
 .main {
@@ -51,53 +52,67 @@ h3 {
 
 
 
+.open {
+    display: block;
+}
 
 
+/* NAV */
 
-/* HEADER NAV */
 
-.menu-wrapper {
+.desktop-nav {
+    display: none;
+}
+
+
+/* --------- HAMBURGER NAV -------- */
+.topnav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem 2rem;
-    background: rgb(0, 9, 40);
-    background: linear-gradient(180deg, rgba(0, 9, 40, 1) 5%, rgba(7, 17, 70, 0) 100%);
-    /* position: fixed; */
-    width: 100vw;
-    z-index: 1;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+}
 
-    ul {
-        display: flex;
-        gap: 6rem;
-        padding-right: 2rem;
-        align-items: center;
-    }
-
-    a {
-        transition: all .3s ease-out;
-    }
-
-    a:hover {
-        transition: all .3s ease-out;
-        color: rgb(30, 127, 255);
-    }
-
-    .button a:hover {
-        transition: all .3s ease-out;
-        color: black;
-    }
+li h1 {
+    font-size: 15px;
+    padding-bottom: 1rem;
+    font-weight: 500;
 }
 
 .logo {
-    max-width: 12vw;
+    z-index: 1;
 }
 
-li {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    padding-right: 1rem;
+
+nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    background-color: #1411399a;
+    padding: 7rem 1rem;
+    z-index: 1;
 }
+
+
+
+.menu-button {
+    background-color: rgba(243, 232, 226, 0);
+    border: 0px solid transparent;
+    line-height: 0;
+    z-index: 1;
+    color: #f7f1e5;
+    z-index: 1;
+}
+
+.menu-button:hover {
+    color: #fc9559;
+}
+
+
+/* --------- HAMBURGER NAV END -------- */
+
 
 /* BG VIDEO */
 
@@ -251,6 +266,46 @@ footer {
 
 @media screen and (min-width: 800px) {
 
+    .mobile-nav {
+        display: none;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 2rem;
+        background: rgb(0, 9, 40);
+        background: linear-gradient(180deg, rgba(0, 9, 40, 1) 5%, rgba(7, 17, 70, 0) 100%);
+        /* position: fixed; */
+        width: 100vw;
+        z-index: 1;
+    
+        ul {
+            display: flex;
+            gap: 6rem;
+            padding-right: 2rem;
+            align-items: center;
+        }
+    
+        a {
+            transition: all .3s ease-out;
+        }
+    
+        a:hover {
+            transition: all .3s ease-out;
+            color: rgb(30, 127, 255);
+        }
+    
+        .button a:hover {
+            transition: all .3s ease-out;
+            color: black;
+        }
+    }
 
     .section-2 {
         display: grid;

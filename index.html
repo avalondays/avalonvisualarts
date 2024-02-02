@@ -22,28 +22,45 @@
 <body>
 
     <a id="top"></a>
-    <header>
-        <div class="menu-wrapper">
-            <img class="logo" src="../img/logo-temp.png" alt="Avalon Visual Arts" />
-            <nav>
-                <div class="links">
-                    <ul>
-                        <li><a href="https://www.google.com/" class="underline">About</a></li>
-                        <li><a href="https://www.google.com/" class="underline">Jobs</a></li>
-                        <li class="button-header"><a href="https://www.google.com/" class="underline">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+    <div class="topnav">
+        <a href="index.html"><img class="logo" src="img/logo-temp.png" alt="AVA Logo" /></a>
+  
+        <button class="menu-button">
+          <i class="fa-sharp fa-solid fa-bars fa-2x"></i>
+        </button>
+      </div>
+      <nav>
+        <ul>
+            <button class="menu-button">
+                <p><i class="fa-solid fa-xmark"></i>Close</p>
+              </button>
+          <li><a href="index.html" title="Home"><b>Home & Projects</b></a></li>
+          <li><a href="logo-identity.html" title="Project 1">About</a></li>
+          <li><a href="desktop-website.html" title="Project 2">Contact</a></li>
+        </ul>
+      </nav>
 
-        <section class="hero-area">
-            <video autoplay loop>
-                <source src="../img/website introo.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-              </video>
-        </section>
+    <div class="desktop-nav">
+        <img class="logo" src="../img/logo-temp.png" alt="Avalon Visual Arts" />
+        <div class="top-links">
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.google.com/" class="underline">About</a></li>
+                    <li><a href="https://www.google.com/" class="underline">Jobs</a></li>
+                    <li class="button-header"><a href="https://www.google.com/" class="underline">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-area">
+        <video autoplay loop>
+            <source src="../img/website introo.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </section>
 
     </header>
 
@@ -70,7 +87,7 @@
                 <p>Interested in collaborating? Reach out to me at avalonianarts@gmail.com!</p>
                 <a class="button-header" href="https://www.google.com/">More About Me + Resume</a>
             </div>
-                <img src="../img/placeholder.jpg">
+            <img src="../img/placeholder.jpg">
         </section>
 
         <section class="section-3">
@@ -154,5 +171,8 @@
             <li><a href="#top">Back to top</a></li>
         </ul>
     </footer>
-
+<!-- Load Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="scripts.js"></script>
 </body>
+</html>
