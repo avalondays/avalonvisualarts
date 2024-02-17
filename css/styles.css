@@ -94,10 +94,20 @@ nav {
     width: 100%;
     height: 100vh;
     top: 0px;
-    background-color: #1411399a;
+    background-color: #141139a4;
     padding: 7rem 1rem;
     z-index: 1;
     transition: .3s all;
+    font-size: 15pt;
+
+    li {
+        margin: 1rem 0rem;
+    }
+
+    a {
+        font-size: 24pt;
+      
+    }
 }
 
 .button-header {
@@ -318,31 +328,24 @@ h1 a {
 }
 
 
-/* FOOTER */
 footer {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5rem;
-    width: 100%;
-    font-size: 10pt;
-
-    ul {
-        display: flex;
-        gap: 6rem;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    li {
-        grid-template-columns: 1.3fr 1fr 1fr;
-        gap: 1rem;
-        text-transform: uppercase;
-        padding-right: 1rem;
-
-    }
+    display: block;
+    padding: 1rem;
+    justify-content: center;
+    background-color:#E24444;
+    color:#0E0E1A;
 }
+
+
+.project-description {
+    display: block;
+        padding: 2rem 2rem;
+
+        img {
+            padding-top: 3rem;
+        }
+}
+
 
 
 @media screen and (min-width: 800px) {
@@ -431,21 +434,43 @@ footer {
 .project-description {
     display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: 6rem;
         width: 100%;
-        padding: 10rem 6rem;
+        padding: 10rem 6rem 4rem 6rem;
 }
 
-.bumper-proj {
-    position: absolute;
-    right: 0px;
-    bottom: -30px;
-}
 
 .project-images {
     padding: 3rem 5rem;
 }
 
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    width: 100%;
+    font-size: 10pt;
+    margin-top: 3rem;
+
+    ul {
+        display: flex;
+        gap: 6rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    li {
+        grid-template-columns: 1.3fr 1fr 1fr;
+        gap: 1rem;
+        text-transform: uppercase;
+        padding-right: 1rem;
+
+    }
+}
 
 }
 
@@ -592,7 +617,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-      overflow:scroll;
+      overflow-x: hidden;
     }
     
     .lightbox-target:target img {
@@ -602,5 +627,19 @@ footer {
     
     .lightbox-target:target a.lightbox-close {
     top: 0;
+    }
+
+    h1.project-title {
+        
+        font-weight: 800;
+        font-size: 30pt;
+        color:#fc9559
+    }
+
+    h3.project-title {
+        font-weight: 300;
+        font-size: 12pt;
+        color:#ffffff94;
+        padding-bottom: 2rem;
     }
     
