@@ -13,3 +13,5 @@ var slider = tns({
     mouseDrag: true,
     controls: false
 });
+
+document.location.reload(true)
